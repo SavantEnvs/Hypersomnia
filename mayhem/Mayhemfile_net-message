@@ -1,0 +1,6 @@
+project: savantenvs/Hypersomnia
+target: net-message
+cmds:
+  - cmd: /mayhem/fuzz_net_message
+    libfuzzer: true
+    timeout: 10

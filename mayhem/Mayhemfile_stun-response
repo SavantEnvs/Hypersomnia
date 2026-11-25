@@ -1,0 +1,9 @@
+project: savantenvs/Hypersomnia
+target: stun-response
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/stun-response/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_stun_response
+    libfuzzer: true
+    timeout: 10

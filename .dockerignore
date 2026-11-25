@@ -1,0 +1,4 @@
+# Commit-image build context: the full repo incl. .git; only local build outputs are left out.
+mayhem/build-fuzz/
+mayhem/build-test/
+/fuzz_*

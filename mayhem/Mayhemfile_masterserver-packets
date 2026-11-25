@@ -1,0 +1,6 @@
+project: savantenvs/Hypersomnia
+target: masterserver-packets
+cmds:
+  - cmd: /mayhem/fuzz_masterserver_packets
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,6 @@
+project: savantenvs/Hypersomnia
+target: identity-cert
+cmds:
+  - cmd: /mayhem/fuzz_identity_cert
+    libfuzzer: true
+    timeout: 10

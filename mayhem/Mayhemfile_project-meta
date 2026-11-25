@@ -1,0 +1,9 @@
+project: savantenvs/Hypersomnia
+target: project-meta
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/project-meta/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_project_meta
+    libfuzzer: true
+    timeout: 10
